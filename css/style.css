@@ -84,7 +84,7 @@ textarea { overflow: auto; }
 
 #navigation { background: url(images/navigation.png) no-repeat 0 0; width: 984px; height: 90px; padding-top: 9px; padding-left: 20px;  position: absolute; top: 115px; left: 12px; z-index: 100; }
 #navigation ul { list-style: none; list-style-position: outside; }
-#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 29px; }
+#navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 70px; }
 #navigation ul li.last { background: transparent; }
 #navigation ul li a { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 0px; }
 #navigation ul li a:hover { text-decoration: none; color: #f6c387; }
@@ -93,7 +93,7 @@ textarea { overflow: auto; }
 .big-slider { width: 922px; height: 340px; overflow: visible; position: static; }
 .big-slider ul.slides { position: relative; list-style: none; list-style-position: outside; overflow: visible; }
 .big-slider ul.slides li { position: relative; width: 922px; height: 340px; float: left;  }
-.big-slider ul.slides li img { width: 330px; height: 313px; margin-top: 26px; margin-right: 24px; margin-left: 40px; }
+.big-slider ul.slides li img {  margin-top: 26px; margin-right: 60px; margin-left: 120px; }
 .big-slider ul.slides .slide-cnt { width: 490px; float: left; padding-top: 47px; }
 .big-slider ul.slides .slide-cnt h2 { font-size: 44px; color: #ff9031; font-family: 'museo700',arial, helvetica, serif; font-weight: normal; line-height: 53px; padding-bottom: 4px; }
 .big-slider ul.slides .slide-cnt p { padding-bottom: 4px; }
@@ -135,7 +135,7 @@ textarea { overflow: auto; }
 
 /* footer */
 html, body { height: 100%; }
-#wrapper { min-height: 15%; height: auto !important; height: 100%; margin: 0 auto -116px; }
+#wrapper { min-height: 15%; height: auto !important; height: 100%; margin: 0 auto -95px; }
 #footer, #footer-push { height: 116px; }
 #footer { background: url(images/footer.png) repeat-x 0 0; padding-top: 95px; height: 20px;  }
 #footer .footer-nav { float: left; }
