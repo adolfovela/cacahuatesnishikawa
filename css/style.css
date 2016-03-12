@@ -28,8 +28,8 @@ body {
     font-size: 12px;
     line-height: 22px;
     font-family: arial, sans-serif;
-    color: #828282;
-    background: url(images/body.png) repeat 0 0;
+    background-color: #F2A94D;
+  
     min-width: 980px;
 }
 
@@ -53,7 +53,9 @@ textarea { overflow: auto; }
 .header { background: url(images/header-bg.png) repeat-x 0 0; height: 514px; }
 .header .shell { background: url("") no-repeat 391px 0; position: relative; height: 100%; }
 #logo { width: 191px; font-size: 0; line-height: 0; float: left; }
-#logo a { height: 111px; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; display: block; }
+#logo a {height: 612px;width:  397px;background: url(images/nishikawa.png) no-repeat 0 0;background-size: 30% 30%;text-indent: -4000px;display: block;}
+
+
 
 .testimonials { width: 265px;  padding: 7px 9px 9px; position: absolute; top: 30px; left: 290px; background: url(images/testimonials.png) repeat 0 0; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px;
 	box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -o-box-shadow: 0px 0px 4px rgba(0,0,0,0.4); 
@@ -82,14 +84,14 @@ textarea { overflow: auto; }
 .socials a:hover { background-position: 0 -55px; margin-top: -5px; }
 .main { background: url("") repeat-x 0 0; }
 
-#navigation { background: url(images/navigation.png) no-repeat 0 0; width: 984px; height: 90px; padding-top: 9px; padding-left: 20px;  position: absolute; top: 115px; left: 12px; z-index: 100; }
+#navigation {background: url(images/navigation.png) no-repeat 0 0;width: 984px;height: 90px;padding-top: 9px;padding-left: 20px;position: absolute;top: 170px;left: 12px;z-index: 100;}
 #navigation ul { list-style: none; list-style-position: outside; }
 #navigation ul li { float: left; font-size: 18px; font-family: 'museo', arial, helvetica, serif; background: url(images/nav-border.png) no-repeat right 0; line-height: 48px; padding: 0 70px; }
 #navigation ul li.last { background: transparent; }
 #navigation ul li a { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 0px; }
 #navigation ul li a:hover { text-decoration: none; color: #f6c387; }
 
-.slider-holder { width: 922px; height: 340px; padding: 60px 70px; overflow: hidden; position: relative; background: url(images/slider.png) no-repeat 0 0; position: absolute; top: 125px; left: -44px; z-index: 5;}
+.slider-holder {width: 922px;height: 340px;padding: 60px 70px;overflow: hidden;position: relative;background: url(images/slider.png) no-repeat 0 0;position: absolute;top: 180px;left: -44px;z-index: 5;}
 .big-slider { width: 922px; height: 340px; overflow: visible; position: static; }
 .big-slider ul.slides { position: relative; list-style: none; list-style-position: outside; overflow: visible; }
 .big-slider ul.slides li { position: relative; width: 922px; height: 340px; float: left;  }
@@ -137,7 +139,7 @@ textarea { overflow: auto; }
 html, body { height: 100%; }
 #wrapper { min-height: 15%; height: auto !important; height: 100%; margin: 0 auto -95px; }
 #footer, #footer-push { height: 116px; }
-#footer { background: url(images/footer.png) repeat-x 0 0; padding-top: 95px; height: 20px;  }
+#footer {background-color: #F2A94D;padding-top: 145px;height: 20px;color:antiquewhite;}
 #footer .footer-nav { float: left; }
 #footer .footer-nav ul { list-style: none; list-style-position: outside; font-size: 14px; }
 #footer .footer-nav ul li { float: left; border-right: 1px solid #cf8832; line-height: 11px; padding: 0 10px;  }
