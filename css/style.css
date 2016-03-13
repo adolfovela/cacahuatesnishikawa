@@ -57,12 +57,14 @@ textarea { overflow: auto; }
 
 
 
-.testimonials { width: 265px;  padding: 7px 9px 9px; position: absolute; top: 30px; left: 290px; background: url(images/testimonials.png) repeat 0 0; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px;
-	box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.4); -o-box-shadow: 0px 0px 4px rgba(0,0,0,0.4); 
+.testimonials {
+	position: absolute;
+	top: 27px;
+	left: 290px;
 }
-.testimonials h4 { color: #cf362d; font-size: 17px; text-align: center; font-family: 'museo', arial, helvetica, serif; font-weight: normal;text-shadow: rgba(255,255,255,0.5) 0px 1px 0px; padding-bottom:  4px; }
+.testimonials h4 {color: #ffffff;font-size: 52px;text-align: center;font-family: 'museo700',arial, helvetica, serif;font-weight: normal;text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;}
 .testimonials p { float: right; color: #b67a70; }
-.testimonials .testimonials-slider { width: 265px; height: 44px; position: relative; }
+.testimonials .testimonials-slider {width: 625px;height: 34px;margin-left: -80px;margin-top: 80px;}
 .testimonials .testimonials-slider ul.slides { list-style: none; list-style-position: outside;  }
 .testimonials .testimonials-slider ul.slides ul li { width: 265px; height: 44px; float: left; }
 .testimonials .rating { float: left; }
