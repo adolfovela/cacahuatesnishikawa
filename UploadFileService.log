@@ -1,0 +1,608 @@
+15:02:17,635 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta archivo...
+15:02:44,246 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta timbre...
+15:03:13,376 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:03:13,376 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:03:15,281 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: WyoEI/Pu7MitM/ns75hWfaKzfg3l4M5ERofeH0eJ3CVSWGkFJ+eY2wXqnI5FonQPOJrQ/3rro3vseauHiyuk7/YJ0B7yHJQ41V9k7yGI8zkIuxC27VO+gGRqPaQ/C+ayJJuQainS7cMic0yW9IOvivTuqvJ1ZHnPxibwjJAQHfU=
+15:03:15,281 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:03:15,281 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: BurvLCe1YXywlhjPgLjxLczjwXsBVItSVl83JC9IZXsyqFgZLQdZeO0h5csZxac4EFDauNHIKS39v3FD4g4u/Vj2LyaydZsPBAt2j/+NkwHAChl31MyEma2FMOFBaOhobNCES7juhtL987DxA92+FUh0tmlFWAeqyc3gv9MedcU=
+15:03:15,281 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000301021501
+15:03:15,281 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:03:15,281 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:03:15,281 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:03:55,602 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: b2cde869b6eddc147dd07cde533519079191a5e7
+15:03:55,632 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:03:55,632 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:03:55,992 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:03:56,037 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: c71fddc3c167cddc4784d1589236f040b1cc7660
+15:03:56,037 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:13:11,089 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta archivo...
+15:13:38,630 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta timbre...
+15:13:57,471 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:13:57,471 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:13:57,711 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:13:57,711 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:13:57,711 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:13:57,711 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:13:57,711 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:13:57,711 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:13:57,711 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:13:57,996 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:13:57,996 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:13:57,996 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:13:58,011 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:13:58,026 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:13:58,026 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:17:00,896 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:17:00,896 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:17:01,121 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:17:01,121 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:17:01,121 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:17:01,121 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:17:01,136 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:17:01,136 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:17:01,136 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:17:01,346 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:17:01,361 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:17:01,361 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:17:01,406 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:17:01,421 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:17:01,421 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:17:08,186 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:17:08,186 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:17:08,531 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:17:08,531 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:17:08,531 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:17:08,531 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:17:08,531 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:17:08,531 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:17:08,531 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:17:08,741 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:17:08,741 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:17:08,741 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:17:08,756 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:17:08,771 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:17:08,771 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:17:13,346 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:17:13,346 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:17:13,571 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:17:13,571 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:17:13,571 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:17:13,571 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:17:13,571 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:17:13,571 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:17:13,571 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:17:13,781 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:17:13,781 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:17:13,781 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:17:13,796 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:17:13,811 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:17:13,811 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:17:53,622 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:17:53,622 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:17:53,967 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:17:53,967 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:17:53,967 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:17:53,967 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:17:53,967 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:17:53,967 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:17:53,967 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:17:54,252 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:17:54,252 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:17:54,252 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:17:54,267 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:17:54,282 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:17:54,282 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:17:58,047 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:17:58,047 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:17:58,257 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:17:58,257 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:17:58,272 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:17:58,272 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:17:58,272 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:17:58,272 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:17:58,272 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:17:58,452 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:17:58,452 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:17:58,452 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:17:58,467 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:17:58,482 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:17:58,482 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:18:02,188 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:18:02,188 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:18:02,413 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: UkRzpIIqK/DTsYPie06DSez1X7st7Twa4MpWUF7dLMni5WrpJ74aM0kGroE97XsMuP69i3loQ/R6kLJKAULRfzd/sil2Hua38jaOw/QpueG5Kq5+UKK0HieSI+AllCRsv97m6ZE9DvDJ4HnWvK1X+jJBEDQMlHLwz3NTiXCGDTQ=
+15:18:02,413 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:18:02,413 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: PjZ/F4RPYz1UpWpT3bpZMX5f2jd4HwCcfBqjAsrCd7MSVgzNdnuhbk5eEt5Rt8pwWAE331Gxu6eldi5OktXWZDH6eMHnO2CLdBn4wXU4fkyLXBFocoMRDiJIMmEpk1ZHJnJuY8Owq6bmJkgpZsaF/qe8Cv0dbd8/Y1MPrgOXZq0=
+15:18:02,413 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:18:02,458 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:18:02,473 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:18:02,473 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:18:02,683 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 47cb5aaebb4f100cd47827498b8773fef59c9af1
+15:18:02,683 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:18:02,683 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:18:02,698 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:18:02,713 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: e24e96d8bf48f66f284ab77f6178f2b915e260fa
+15:18:02,713 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:24:16,753 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta archivo...
+15:24:41,188 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta timbre...
+15:25:06,870 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:25:06,870 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:25:07,230 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: dH8JByO+kQDhrpEUxlDiGb2jo0jttCLs+U+4EwBwTGGH9Yz5Ugrk80j55CDTczIyEhrGzi8ok3x8sMwrjkdRp7mUIzuPVzApeRDYX070qhdzpXnxI/kXtJn6pRi6ce0XPD/dbA5SzacK3qJlgFPR4fq40yMRJnebTAa197UthAY=
+15:25:07,230 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:25:07,230 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: X49TAX1Z8jzILDFz4e2RLwVkPUuiNiAPrc26MvZ29Dgdulc+yVEDQ+/O4Kic5VvFvF2MJzWQGim+fOjZq2gOLqOXFfCL8yHSp2Mk7+/yMKW/phthfFveC0faWmMMa+zo7EaI2VPtMXfrvc6ueCOXeLaXPw5TGQsz+KNyenXnabk=
+15:25:07,230 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000202809550
+15:25:07,245 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Tue Mar 01 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:25:07,245 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:25:07,245 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:25:07,725 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 939f0415b55cccb693851f932515cdc089f5223f
+15:25:07,725 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:25:07,725 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:25:07,755 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:25:07,770 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: 517b2090716bc41a646943aef0ff22a0f693f5c3
+15:25:07,770 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+15:35:48,046 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta archivo...
+15:36:25,952 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga ruta timbre...
+15:37:10,503 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga general...
+15:37:10,503 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga comprobante...
+15:37:10,788 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloComprobante: WyoEI/Pu7MitM/ns75hWfaKzfg3l4M5ERofeH0eJ3CVSWGkFJ+eY2wXqnI5FonQPOJrQ/3rro3vseauHiyuk7/YJ0B7yHJQ41V9k7yGI8zkIuxC27VO+gGRqPaQ/C+ayJJuQainS7cMic0yW9IOvivTuqvJ1ZHnPxibwjJAQHfU=
+15:37:10,788 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoComprobante: 00001000000301101077
+15:37:10,803 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> selloTimbre: BurvLCe1YXywlhjPgLjxLczjwXsBVItSVl83JC9IZXsyqFgZLQdZeO0h5csZxac4EFDauNHIKS39v3FD4g4u/Vj2LyaydZsPBAt2j/+NkwHAChl31MyEma2FMOFBaOhobNCES7juhtL987DxA92+FUh0tmlFWAeqyc3gv9MedcU=
+15:37:10,803 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> noCertificadoTimbre: 00001000000301021501
+15:37:10,803 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> Wed Mar 02 00:00:00 CST 2016 -- Mon Jul 01 00:00:00 CDT 2013
+15:37:10,803 [ INFO] mx.gob.sat.cfd.validador.Comprobante >> XLST Actual
+15:37:10,803 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> URL ::::::::::::http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_2/cadenaoriginal_3_2.xslt
+15:37:11,313 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: b2cde869b6eddc147dd07cde533519079191a5e7
+15:37:11,313 [DEBUG] mx.gob.sat.cfd.validador.PKCSLibs >> Digest algorithm: SHA-1
+15:37:11,313 [DEBUG] mx.gob.sat.cfd.validador.Validador >> Carga certificado timbre...
+15:37:11,418 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> timbreFiscalElement: [tfd:TimbreFiscalDigital: null]
+15:37:11,448 [DEBUG] mx.gob.sat.cfd.validador.Comprobante >> [generaCadenaOriginal] digestion: c71fddc3c167cddc4784d1589236f040b1cc7660
+15:37:11,448 [ERROR] mx.gob.sat.cfd.validador.FirmasDigitalesHelper >> ERROR: mVerificaFirmaDigital
+mx.gob.sat.cfd.validador.SgiLibException: Formato de firma (padding) inválido
+	at mx.gob.sat.cfd.validador.PKCSLibs.quitaPadingPKCS1(PKCSLibs.java:284)
+	at mx.gob.sat.cfd.validador.PKCSLibs.verificaFirma(PKCSLibs.java:296)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigital(FirmasDigitalesHelper.java:133)
+	at mx.gob.sat.cfd.validador.FirmasDigitalesHelper.mVerificaFirmaDigitalBase64(FirmasDigitalesHelper.java:122)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSello(Comprobante.java:834)
+	at mx.gob.sat.cfd.validador.Comprobante.validaSelloTimbre(Comprobante.java:823)
+	at mx.gob.sat.cfd.validador.Validador.cargaCertificadoTimbre(Validador.java:107)
+	at mx.gob.sat.cfd.validador.Validador.cargaGeneral(Validador.java:56)
+	at mx.gob.sat.cfd.validador.Validador.actionPerformed(Validador.java:47)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)

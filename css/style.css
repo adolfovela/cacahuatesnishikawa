@@ -53,7 +53,7 @@ textarea { overflow: auto; }
 .header { background: url(images/header-bg.png) repeat-x 0 0; height: 514px; }
 .header .shell { background: url("") no-repeat 391px 0; position: relative; height: 100%; }
 #logo { width: 191px; font-size: 0; line-height: 0; float: left; }
-#logo a {height: 612px;width:  397px;background: url(images/nishikawa.png) no-repeat 0 0;background-size: 33% 33%;text-indent: -4000px;display: block;margin-left: 25px;}
+#logo a {height: 1280px;width:  1024px;background: url(images/nishikawa.png) no-repeat 0 0;background-size: 35% 35%;text-indent: -4000px;display: block;margin-left: 25px;}
 
 
 
