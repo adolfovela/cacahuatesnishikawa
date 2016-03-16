@@ -25,12 +25,11 @@
 body, html { height: 100%; }
 
 body {
-    font-size: 12px;
+    font-size: 24px;
     line-height: 22px;
-    font-family: arial, sans-serif;
+    font-family: 'museo700',arial, helvetica, serif;
     background-color: #F2A94D;
-  
-    min-width: 980px;
+    min-width: 977px;
 }
 
 a { color: #ff9031; text-decoration: none; cursor: pointer; }
@@ -40,7 +39,7 @@ a.dot:hover { text-decoration: none; }
 a img { border: 0; }
 
 article, aside, details, footer, header, menu, nav, section { display: block; }
-input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
+input, textarea, select {font-size: 22px;font-family: arial, sans-serif;}
 textarea { overflow: auto; }
 
 .cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
@@ -53,7 +52,7 @@ textarea { overflow: auto; }
 .header { background: url(images/header-bg.png) repeat-x 0 0; height: 514px; }
 .header .shell { background: url("") no-repeat 391px 0; position: relative; height: 100%; }
 #logo { width: 191px; font-size: 0; line-height: 0; float: left; }
-#logo a {height: 1280px;width:  1024px;background: url(images/nishikawa.png) no-repeat 0 0;background-size: 35% 35%;text-indent: -4000px;display: block;margin-left: 25px;}
+#logo a {height: 500px;width: 376px;background: url(images/nishikawa.png) no-repeat 0 0;background-size: 40% 40%;text-indent: -4000px;display: block;margin-left: 25px;}
 
 
 
@@ -88,7 +87,7 @@ textarea { overflow: auto; }
 
 #navigation {background: url(images/navigation.png) no-repeat 0 0;width: 984px;height: 90px;padding-top: 9px;padding-left: 20px;position: absolute;top: 190px;left: 12px;z-index: 100;}
 #navigation ul { list-style: none; list-style-position: outside; }
-#navigation ul li {float: left;font-size: 18px;font-family: 'museo', arial, helvetica, serif;background: url(images/nav-border.png) no-repeat right 0;line-height: 48px;padding: 0 60px;}
+#navigation ul li {float: left;font-size: 18px;font-family: 'museo', arial, helvetica, serif;background: url(images/nav-border.png) no-repeat right 0;line-height: 48px;padding: 0 75px;}
 #navigation ul li.last { background: transparent; }
 #navigation ul li a { color: #fff; text-shadow: rgba(0,0,0,0.6) 0px 1px 0px; }
 #navigation ul li a:hover { text-decoration: none; color: #f6c387; }
@@ -99,7 +98,7 @@ textarea { overflow: auto; }
 .big-slider ul.slides li { position: relative; width: 922px; height: 340px; float: left;  }
 .big-slider ul.slides li img {  margin-top: 26px; margin-right: 60px; margin-left: 120px; }
 .big-slider ul.slides .slide-cnt { width: 490px; float: left; padding-top: 47px; }
-.big-slider ul.slides .slide-cnt h2 { font-size: 44px; color: #ff9031; font-family: 'museo700',arial, helvetica, serif; font-weight: normal; line-height: 53px; padding-bottom: 4px; }
+.big-slider ul.slides .slide-cnt h2 {font-size: 44px;color: #ff9031;font-family: 'museo700',arial, helvetica, serif;font-weight: normal;line-height: 53px;padding-bottom: 4px;margin-top: 60px;}
 .big-slider ul.slides .slide-cnt p { padding-bottom: 4px; }
 .big-slider ul.slides .slide-cnt a.red-btn { width: 154px; height: 58px; text-align: center; line-height: 50px; margin-top: 6px;  position: relative; left: -5px; color: #fff; text-shadow: rgba(0,0,0,0.5) 0px 1px 1px; font-size: 18px; display:block; background: url(images/red-btn.png) no-repeat 0 0;}
 .big-slider ul.slides .slide-cnt a.red-btn:hover { text-decoration: none; color: #f6c387;  }
