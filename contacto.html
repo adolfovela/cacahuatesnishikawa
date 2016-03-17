@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
-    <title>Cafe</title>
+    <title>Nishikawa</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="css/images/nishikawa.ico">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
     <script src="js/jquery-1.8.0.min.js"></script>
@@ -54,34 +54,67 @@
                 <span class="left"></span> <span class="right"></span>
                 <!-- flexslider -->
                 <div class="big-slider">
-                    <ul class="slides">
+                    
 
+                        <table>
+                            <tr>
+                                <th>
+
+                                    <h2 style="margin-top:20px; margin-left:60px">Contactanos:</h2>
+
+                                    <form action="contact.php" method="post" id="ajax-contact">
+                                        <div class="row uniform" style="margin-top:20px; margin-left:60px">
+                                            <div class="6u 12u$(small)">
+                                                <input name="name" id="name" value="" placeholder="Nombre" type="text">
+                                            </div>
+                                            <div class="6u$ 12u$(small)">
+                                                <input name="email" id="email" value="" placeholder="Email" type="email">
+                                            </div>
+                                            <div class="12u$">
+                                                <textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea>
+                                            </div>
+                                            <div class="12u$">
+                                                <ul class="actions">
+                                                    <input value="Enviar Mensaje" class="special big" type="submit">
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </th>
+                                <th>
+
+                                    <h2 style="margin-top:-20px; margin-left:60px">Teléfonos</h2>
+                                    <div style="margin-top:20px; margin-left:60px">(55)56571845</div>
+                                    <div style="margin-top:20px; margin-left:60px">(55)56571946</div>
+                                </th>
+
+                                <th>
+                                    <div id="map" style="width: 210px; height: 100px; margin-left:210px; margin-top:-80px; ">
+                                        <script src="leaflet.js"></script>
+                                        <script>
+
+                        var map = L.map('map').setView([19.601982, -99.1924197], 16);
+                        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+
+                        L.marker([19.6009908, -99.1883953]).addTo(map)
+                .bindPopup("<b>LinSys</b><br />Nuestra Ubicación.").openPopup();
+
+                                        </script>
+                                    </div>
+
+                                </th>
+                            </tr>
+                        </table>
 
                       
-                            <h2>Contactanos:</h2>
-                                      
-                    <form action="contact.php" method="post" id="ajax-contact">
-                        <div class="row uniform">
-                            <div class="6u 12u$(small)">
-                                <input name="name" id="name" value="" placeholder="Nombre" type="text">
-                            </div>
-                            <div class="6u$ 12u$(small)">
-                                <input name="email" id="email" value="" placeholder="Email" type="email">
-                            </div>
-                            <div class="12u$">
-                                <textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea>
-                            </div>
-                            <div class="12u$">
-                                <ul class="actions">
-                                    <li><input value="Enviar Mensaje" class="special big" type="submit"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
+
+                        
 
 
-                    
-                    </ul>
                 </div>
                 <!-- end of flexslider -->
             </div>
@@ -95,18 +128,8 @@
 
     <div id="footer">
         <div class="shell">
-            <div class="footer-nav">
-                <ul>
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Menu</a></li>
-                    <li><a href="#">Reservations</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Showcase</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <p class="copy">© Copyright 2012<span>|</span>Café CSS Template. Design by <a target="_blank" href="http://chocotemplates.com">ChocoTemplates</a></p>
+      
+            <p class="copy">© Todos los derechos reservados 2016<span>|</span>Fábrica de cacahuates </p>
         </div>
     </div>
 </body>
