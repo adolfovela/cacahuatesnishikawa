@@ -28,7 +28,7 @@ body {
     font-size: 24px;
     line-height: 22px;
     font-family: 'museo700',arial, helvetica, serif;
-    background-color: #F2A94D;
+    background-color: #008CF8;
     min-width: 977px;
 }
 
@@ -140,7 +140,7 @@ textarea { overflow: auto; }
 html, body { height: 100%; }
 #wrapper { min-height: 15%; height: auto !important; height: 100%; margin: 0 auto -95px; }
 #footer, #footer-push { height: 116px; }
-#footer {background-color: #F2A94D;padding-top: 145px;height: 20px;color:antiquewhite;}
+#footer {background-color: #008CF8;padding-top: 145px;height: 20px;color:antiquewhite;}
 #footer .footer-nav { float: left; }
 #footer .footer-nav ul { list-style: none; list-style-position: outside; font-size: 14px; }
 #footer .footer-nav ul li { float: left; border-right: 1px solid #cf8832; line-height: 11px; padding: 0 10px;  }
