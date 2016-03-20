@@ -6,10 +6,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="css/images/nishikawa.ico">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="leaflet.css" />
     <script src="js/jquery-1.8.0.min.js"></script>
     <!--[if lt IE 9]><script src="js/modernizr.custom.js"></script><![endif]-->
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/functions.js"></script>
+
 </head>
 <body>
 
@@ -85,27 +87,27 @@
                                 </th>
                                 <th>
 
-                                    <h2 style="margin-top:-20px; margin-left:60px; color:#F2A94D"">Teléfonos</h2>
-                                    <div style="margin-top:20px; margin-left:60px">(55)56571845</div>
-                                    <div style="margin-top:20px; margin-left:60px">(55)56571946</div>
+                                    <h2 style="margin-top:-135px; margin-left:50px; color:#F2A94D"">Teléfonos:</h2>
+                                    <div style="margin-top:30px; margin-left:50px">(55)56571845</div>
+                                    <div style="margin-top:30px; margin-left:50px">(55)56571946</div>
                                 </th>
 
                                 <th>
-                                    <div id="map" style="width: 210px; height: 100px; margin-left:210px; margin-top:-80px; ">
+                                    <div id="map"  style="width: 300px; height: 200px; margin-left: 40px">
                                         <script src="leaflet.js"></script>
                                         <script>
 
-                        var map = L.map('map').setView([19.601982, -99.1924197], 16);
+                                            var map = L.map('map').setView([19.3972228, -99.1006472], 16);
                         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                             attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        }).addTo(map);
+                         }).addTo(map);
 
-                        L.marker([19.6009908, -99.1883953]).addTo(map)
-                .bindPopup("<b>LinSys</b><br />Nuestra Ubicación.").openPopup();
+                                            L.marker([19.3972228, -99.1006472]).addTo(map)
+                .bindPopup("<b>Nishikawa</b><br />Av. Plutarco Elias Calles 17 <br />Granjas México, Ciudad de México").openPopup();
 
                                         </script>
                                     </div>
-
+                                    
                                 </th>
                             </tr>
                         </table>
@@ -132,5 +134,7 @@
             <p class="copy">© Todos los derechos reservados 2016<span>|</span>Fábrica de cacahuates </p>
         </div>
     </div>
+
+    
 </body>
 </html>
