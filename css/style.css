@@ -67,16 +67,45 @@ textarea { overflow: auto; }
 .testimonials .testimonials-slider ul.slides { list-style: none; list-style-position: outside;  }
 .testimonials .testimonials-slider ul.slides ul li { width: 265px; height: 44px; float: left; }
 .testimonials .rating { float: left; }
-.testimonials .rating  a.active { background: url(images/star.png) no-repeat 0 0; margin-left: 4px; float: left; width: 20px; height: 20px;   }
+.testimonials .rating  a.active { background: url(images/star.png) no-repeat 0 0; 
+margin-left: 4px; 
+float: left; 
+width: 20px; height: 20px;   }
 .testimonials .rating  a { background: transparent; }
 
 .header-right { float: right; width: 264px; position: relative; margin-right: -10px;  }
-.subscribe { width: 120px; height: 54px; background: url(images/subscribe.png) no-repeat 0 0; float: left; font-family: 'museo', arial, helvetica, serif; line-height: 48px; padding: 0px 20px;  }
+.subscribe { width: 120px; height: 54px; background: url(images/subscribe.png) no-repeat 0 0; 
+-moz-transition: margin 0.2s;
+-webkit-transition: margin 0.2s;
+-o-transition: margin 0.2s;
+float: left; font-family: 'museo', arial, helvetica, serif; line-height: 48px; padding: 0px 20px;  }
+
 .subscribe a { color: #fff; font-size: 16px; position: relative; padding-left: 40px; }
-.subscribe a span { background: url(images/sbubscribe-ico.png) no-repeat 0px 0px; width: 34px; height: 34px; position: absolute; display: block;  top: -5px; left: 0; }
+.subscribe a span { background: url(images/sbubscribe-ico.png) 
+no-repeat 0px 0px; width: 34px; height: 34px; position: absolute; display: block;  top: -5px; left: 0; }
 .subscribe a:hover { color: #f6c387; text-decoration: none; }
 
-.socials a { background: url(images/socials.png) no-repeat 0 0; width: 50px; height: 52px;  font-size: 0; line-height: 0; text-indent: -4000px; float: left; transition: margin 0.2s;
+.socials1 a 
+{ width: 115px; background: url(images/subscribeold.png) no-repeat 0 0; 
+-moz-transition: margin 0.2s;
+-webkit-transition: margin 0.2s;
+-o-transition: margin 0.2s;
+float: left; font-family: 'museo', arial, helvetica, serif; line-height: 48px; padding-left: 40px;
+-o-transition: margin 0.2s;
+font-size: 20px;}
+
+.socials1 a.twitter-ico { background-position: right 0; }
+.socials1 a.twitter-ico:hover { background-position: right -55px; }
+.socials1 a:hover { background-position: 0 -55px; margin-top: -5px; color: #f6d187; text-decoration: none; }
+
+
+
+.main { background: url("") repeat-x 0 0; }
+   
+.socials a 
+{ background: url(images/socials.png) no-repeat 0 0; 
+width: 50px; height: 52px;  
+font-size: 0; line-height: 0; text-indent: -4000px; float: left; transition: margin 0.2s;
 -moz-transition: margin 0.2s;
 -webkit-transition: margin 0.2s;
 -o-transition: margin 0.2s; }
